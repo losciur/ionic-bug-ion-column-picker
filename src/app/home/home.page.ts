@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  currentValue = 'javascript';
+
+  onIonChange(event: CustomEvent) {
+    console.log("onIonChange fired!", event.detail.value)
+    this.currentValue = event.detail.value;
+  }
+
+  onDidDismiss(event: CustomEvent) {
+    console.log('didDismiss', JSON.stringify(event.detail));
+  }
 
 }
