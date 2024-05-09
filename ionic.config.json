@@ -1,0 +1,7 @@
+{
+  "name": "ionColumnPickerBug",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
